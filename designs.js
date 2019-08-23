@@ -19,3 +19,7 @@ $("#buttonInput").click(function(event) {
 	makeGrid();
 });
 
+//mouse click event
+$("#pixelCanvas").on("click", "td", function() {
+	$(this).css("background-color", document.querySelector('#colorPicker').value);
+});
